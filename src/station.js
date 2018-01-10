@@ -24,5 +24,8 @@ Station.prototype.takeMultiple = function(bicycles) {
 };
 
 Station.prototype.release = function() {
-	return this.newestBike()
-}
+	var newestBike = this.newestBike();
+	var newestBikeIndex = this.bikes.indexOf(newestBike);
+	this.bikes.splice(newestBikeIndex);
+	return newestBike
+};
