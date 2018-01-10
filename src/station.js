@@ -15,3 +15,7 @@ Station.prototype.newestBike = function() {
 	};
 };
 
+Station.prototype.take = function(bike) {
+	this.bikes.push(bike);
+};
+
