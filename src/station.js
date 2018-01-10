@@ -20,5 +20,9 @@ Station.prototype.take = function(bike) {
 };
 
 Station.prototype.takeMultiple = function(bicycles) {
-	return this.bikes = this.bikes.concat(bicycles)
+	return this.bikes = this.bikes.concat(bicycles);
+};
+
+Station.prototype.release = function() {
+	return this.newestBike()
 }
