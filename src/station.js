@@ -1,1 +1,3 @@
-var Station = function() {}
+var Station = function(name) {
+	this.name = name
+}
