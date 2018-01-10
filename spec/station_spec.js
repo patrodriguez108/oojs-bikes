@@ -22,7 +22,8 @@ describe("a bike station", function() {
 
   it("is empty if it has no bikes", function() {
     station.bikes = [];
-    expect(station.empty()).toBe(true);
+    expect(station.bikes.includes(newerBike)).toBe(false);
+    expect(station.bikes.includes(olderBike)).toBe(false);
   });
 
   it("has a newest bike determined by model year", function() {
