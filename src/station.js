@@ -19,3 +19,6 @@ Station.prototype.take = function(bike) {
 	this.bikes.push(bike);
 };
 
+Station.prototype.takeMultiple = function(bicycles) {
+	return this.bikes = this.bikes.concat(bicycles)
+}
